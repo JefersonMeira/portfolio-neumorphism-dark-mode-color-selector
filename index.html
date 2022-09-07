@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeferson Meira - Portifólio</title>
+
+    <!-- link para font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- link para o arquivo css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cor-1.css">
+
+    <!-- link para seleção de cores para o tema -->
+    <link rel="stylesheet" href="css/cor-1.css" class="alternar-cor" title="cor-1" disabled>
+    <link rel="stylesheet" href="css/cor-2.css" class="alternar-cor" title="cor-2" disabled>
+    <link rel="stylesheet" href="css/cor-3.css" class="alternar-cor" title="cor-3" disabled>
+    <link rel="stylesheet" href="css/cor-4.css" class="alternar-cor" title="cor-4" disabled>
+    <link rel="stylesheet" href="css/cor-5.css" class="alternar-cor" title="cor-5" disabled>
+
+</head>
+<body>
+    
+    <!-- INÍCIO: seção do menu -->
+    <header class="header">
+        <div class="user">
+            <img src="img/img-user.png" alt="">
+            <h3>Jeferson Meira</h3>
+            <p>Analista de Sistemas</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#sobre">sobre</a>
+            <a href="#servicos">serviços</a>
+            <a href="#projetos">projetos</a>
+            <a href="#contato">contato</a>
+        </nav>
+    </header>
+    <!-- FIM: seção do menu -->
+    
+
+    <!-- botão do menu -->
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <!-- botão para modo noturno -->
+    <div id="dark-mode" class="fas fa-moon"></div>
+
+    <!-- botã para mudar cor de destaque -->
+    <div id="cor-destaque ativo" class="cor-destaque">
+        <div id="cor-destaque-toggler" class="cor-destaque-toggler">
+            <i class="fas fa-brush"></i>
+        </div>
+        <div id="box-cores" class="box-cores">
+            <h3>cor destaque</h3>
+            <div class="cores">
+                <span class="cor-1" onclick="setActiveCor('cor-1')"></span>
+                <span class="cor-2" onclick="setActiveCor('cor-2')"></span>
+                <span class="cor-3" onclick="setActiveCor('cor-3')"></span>
+                <span class="cor-4" onclick="setActiveCor('cor-4')"></span>
+                <span class="cor-5" onclick="setActiveCor('cor-5')"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- INÍCIO: seção home -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Jeferson Meira</h3>
+            <p>eu sou um analista de sistemas</p>
+            <a href="#" class="btn">download cv</a>
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+        </div>
+
+    </section>
+    <!-- FIM: seção home -->
+
+
+    <!-- INÍCIO: seção sobre -->
+    <section class="sobre" id="sobre">
+        <h1 class="heading"><span>sobre</span> mim</h1>
+
+        <div class="row">
+            <div class="box-container">
+                <div class="box">
+                    <h3>8+</h3>
+                    <p>anos experiência</p>
+                </div>
+                <div class="box">
+                    <h3>5</h3>
+                    <p>projetos entregues</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h3>50+</h3>
+                    <p>clientes satisfeitos</p>
+                </div>
+                <div class="box">
+                    <h3>5+</h3>
+                    <p>certificações</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>Meu nome é <span>Jeferson Meira</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quam, voluptatum omnis alias quidem fugit sed ipsam. Doloremque, temporibus officiis cupiditate obcaecati aperiam perferendis odio consequatur ipsum, at ipsa esse.</p>
+                <a href="#contato" class="btn">contato</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="progress">
+                <h3>análise de requisitos <span>90%</span></h3>
+                <div class="bar bar-1-1"><span></span></div>
+                <h3>desenvolvimento software <span>50%</span></h3>
+                <div class="bar bar-1-2"><span></span></div>
+                <h3>teste de software <span>65%</span></h3>
+                <div class="bar bar-1-3"><span></span></div>
+            </div>
+
+            <div class="progress">
+                <h3>java <span>55%</span></h3>
+                <div class="bar bar-2-1"><span></span></div>
+                <h3>angular <span>40%</span></h3>
+                <div class="bar bar-2-2"><span></span></div>
+                <h3>banco de dados <span>60%</span></h3>
+                <div class="bar bar-2-3"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- FIM: seção sobre -->
+
+    <!-- INÍCIO: seção serviços -->
+    <section class="servicos" id="servicos">
+        <h1 class="heading">meus <span>serviços</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <h3>análise de requisitos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos voluptate dolores, placeat natus ratione.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>desenvolvimento de software</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos voluptate dolores, placeat natus ratione.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-searchengin"></i>
+                <h3>teste de software</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos voluptate dolores, placeat natus ratione.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-people-roof"></i>
+                <h3>gerenciamento de projetos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos voluptate dolores, placeat natus ratione.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-comment"></i>
+                <h3>consultor de negócios</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos voluptate dolores, placeat natus ratione.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-building"></i>
+                <h3>CEO Kriston Tecnology</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos voluptate dolores, placeat natus ratione.</p>
+            </div>
+        </div>
+    </section>
+    <!-- FIM: seção serviços -->
+
+    <!-- INÍCIO: seção projetos -->
+    <section class="projetos" id="projetos">
+        <h1 class="heading">meus <span>projetos</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="img/img-project-1.png" alt="">
+                <div class="content">
+                    <h3>Projeto 01</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img-project-2.png" alt="">
+                <div class="content">
+                    <h3>Projeto 02</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img-project-3.png" alt="">
+                <div class="content">
+                    <h3>Projeto 03</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img-project-4.png" alt="">
+                <div class="content">
+                    <h3>Projeto 04</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img-project-5.png" alt="">
+                <div class="content">
+                    <h3>Projeto 05</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img-project-6.png" alt="">
+                <div class="content">
+                    <h3>Projeto 06</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM: seção projetos -->
+
+    <!-- INÍCIO: seção contato -->
+    <section class="contato" id="contato">
+        <h1 class="heading">entre em <span>contato</span></h1>
+
+        <form action="">
+            <input type="text" placeholder="seu nome" class="box" required>
+            <input type="email" placeholder="seu e-mail" class="box" required>
+            <input type="text" placeholder="informe o assunto" class="box" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="informe sua mensagem" class="box" required></textarea>
+            <input type="submit" value="enviar" class="btn">
+        </form>
+    </section>
+    <!-- FIM: seção contato -->
+    
+    <div class="credito">criado por <span>jeferson meira</span> | © Kriston Tecnology ~ todos os direitos reservados</div>
+
+
+    <!-- link para o arquivo js -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
